@@ -10,7 +10,7 @@ class Solution {
     // arr: input array
     // X: element to be searched for
     int search(vector<int>& arr, int x,int index=0) {
-        int size=arr.size();
+        
         
 
         if(index>=arr.size()){
