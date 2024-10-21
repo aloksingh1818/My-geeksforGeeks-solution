@@ -6,11 +6,9 @@ using namespace std;
 // } Driver Code Ends
 class Solution {
   public:
-    vector<int> sortArr(vector<int> arr) {
+    void sortArr(vector<int> &arr) {
         sort(arr.begin(),arr.end());
-        return arr;
     }
-    
 };
 
 //{ Driver Code Starts.
@@ -30,11 +28,12 @@ int main() {
             nums.push_back(num);
         }
         Solution ob;
-        vector<int> v = ob.sortArr(nums);
-        for (auto i : v)
+        ob.sortArr(nums);
+        for (auto i : nums)
             cout << i << ' ';
         cout << endl;
     }
     return 0;
 }
+
 // } Driver Code Ends
